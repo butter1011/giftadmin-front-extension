@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','WhiteDreamPersonal'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.logo{
+  filter: drop-shadow(1px 5px 1px #ffffff);
+}
+
+.float{
+  transform: translateY(-10%);
+  animation: floater 3s infinite;
+  transition: ease 0.5s;
+  width: 270px;
+  height: 160px;
+  position: fixed;
+  left: 10px;
+  bottom: 80px;
+}
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
+}
+
+.cardName{
+  text-transform: uppercase;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  color: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0011ffa8;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Snowflake", sans-serif;
+  text-shadow: -1px 2px #fff;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.navbar-img{
+  filter: drop-shadow(3px 3px 1px #ffffff);
+}
+
+.welcome{
+  font-family:"WhiteDreamPersonal"!important;
+}
+
+@font-face {
+  font-family: "WhiteDreamPersonal";
+  src: url('../public/fonts/WhiteDreamPersonalUseOnlyRegular-L37Rn.otf') format('truetype');
+}
